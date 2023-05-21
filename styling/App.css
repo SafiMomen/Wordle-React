@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#wordleContainer {
+	font-weight: bold;
+	
+	margin-top: 50px;
+	display: table;
+}
+
+main h1 {
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+
+main h1 b {
+	color: #c7c7c7;
+	cursor: help;
+
+	transition: 0.2s;
+}
+
+main h1 b:hover {
+	background-color: black;
+	color: white;
+
+	border-radius: 3px;
+	
+	padding: 3px 6px 3px 6px;
+
+	transition: 0.2s;
+}
+
+main img {
+	cursor: pointer;
+	user-select: none;
+
+	opacity: 90%;
+	
+	transition: 0.3s cubic-bezier(.33,.31,.37,1.64);
+}
+
+main img:hover {
+	transform: translateY(-6px);
+	opacity: 100%;
+	
+	transition: 0.3s cubic-bezier(.33,.31,.37,1.64);
+}
+
+main {
+	font-family: 'Ubuntu Mono', monospace;
+	
+	display: flex;
+	justify-content: center;
+}

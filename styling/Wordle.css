@@ -1,0 +1,83 @@
+
+/* wordle row */
+.wordleRow ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: none;
+
+	flex-direction: horizontal;
+}	
+
+.wordleRow li {
+	float: left;
+}
+
+/* default design */
+.wordlePrompt {
+	display: inline-flex;
+	justify-content:center;
+	align-items: center;
+
+	margin: 4px 4px  4px 4px;
+}
+
+.wordlePrompt p {
+	padding: 0;
+	margin: 0;
+
+	position: absolute;
+	
+	text-align: center;
+	user-select: none;
+}
+
+/* LETTER APPEAR ANIMATION */ 
+.wordlePrompt .unansweredLetter {
+	font-size: 0px;
+	opacity: 0%;
+	transform: rotate(-20deg);
+	transition: 0.1s;
+}
+
+.wordlePrompt .answeredLetter {
+	font-size: 40px;
+	opacity:100%;
+	transform: rotate(0deg);
+	transition: 0.1s;
+}
+
+/* WORDLE ANSWER DESIGN */
+.wordlePromptBack {
+	padding: 30px 30px 30px 30px;
+
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 3px #ededed solid;
+
+	transition: 0.3s;
+}
+
+.wordleRow .answered {
+	background-color: #fafafa;
+	border-radius: 4px;
+	border: 3px #c2c2c2 solid;
+
+	transition: 0.3s;
+}
+
+.wordleRow .answeredYellow {
+	background-color: #fecc16;
+	border: 3px #cca000 solid;
+
+	transition: 0.3s;
+}
+
+.wordleRow .answeredGreen {
+	background-color: #16fe6f;
+	border: 3px #00cc0e solid;
+
+	transform: rotate(3deg);
+
+	transition: 0.3s;
+}

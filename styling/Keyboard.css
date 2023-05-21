@@ -1,0 +1,37 @@
+
+#keyboard {
+	margin-bottom: 50px;
+}
+
+.keyRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.keys {
+	margin: 4px 4px 4px 4px;
+
+	padding: 15px 15px 15px 15px;
+	
+	background-color:#e6e6e6;
+	border-radius: 2px;
+
+	cursor: pointer;
+	user-select: none;
+
+	transition: 0.2s;
+}
+
+.keys:hover {
+	transform: 
+		rotate(5deg) 
+		translate(2px, -5px) 
+		scale(120%);
+
+	background-color: black;
+	color: white;
+	
+	transition: 0.2s;
+	transition-timing-function: cubic-bezier(.33,.31,.37,1.64);
+}
