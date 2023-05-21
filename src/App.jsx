@@ -9,7 +9,7 @@ import Input from './Input';
 
 import {useState, useEffect} from 'react';
 
-export default function App() {
+export default function App() { 
 	let [word, setWord] = useState("TESTS");
 
 	useEffect(() => {
